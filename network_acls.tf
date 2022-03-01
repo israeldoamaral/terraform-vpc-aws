@@ -30,7 +30,7 @@ resource "aws_network_acl" "public" {
 
   tags = {
     # Name = "ACL-Public"
-    Name = format("%s-Acl-Public", tag_vpc)
+    Name = format("%s-Acl-Public", var.tag_vpc)
   }
 }
 
