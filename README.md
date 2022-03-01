@@ -113,7 +113,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_network"></a> [network](#module\_network) | github.com/marcio-machado76/terraform_aws_vpc | n/a |
+| <a name="module_network"></a> [network](#module\_network) | github.com/israeldoamaral/terraform-vpc-aws | n/a |
 
 ## Resources
 
