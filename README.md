@@ -33,8 +33,8 @@ module "network" {
   count_available = var.count_available
   vpc             = module.network.vpc
   tag_vpc         = var.tag_vpc
-  tag_igw         = var.tag_igw
-  tag_rtable      = var.tag_rtable
+  <!-- tag_igw         = var.tag_igw -->
+  <!-- tag_rtable      = var.tag_rtable -->
   nacl            = var.nacl
 }
 ```
