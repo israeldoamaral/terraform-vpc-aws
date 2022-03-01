@@ -33,8 +33,6 @@ module "network" {
   count_available = var.count_available
   vpc             = module.network.vpc
   tag_vpc         = var.tag_vpc
-  <!-- tag_igw         = var.tag_igw -->
-  <!-- tag_rtable      = var.tag_rtable -->
   nacl            = var.nacl
 }
 ```
@@ -66,17 +64,6 @@ variable "tag_vpc" {
   default     = "VPC-name"
 }
 
-<!-- variable "tag_igw" {
-  description = "Tag Name do internet gateway"
-  type        = string
-  default     = "gw-name"
-} -->
-
-<!-- variable "tag_rtable" {
-  description = "Tag Name das route tables"
-  type        = string
-  default     = "rt-name"
-} -->
 
 variable "nacl" {
   description = "Regras de Network Acls AWS"
@@ -140,8 +127,6 @@ No resources.
 | <a name="input_count_available"></a> [count\_available](#input\_count\_available) | Numero de Zonas de disponibilidade | `number` | `2` | no |
 | <a name="input_nacl"></a> [nacl](#input\_nacl) | Regras de Network Acls AWS | `map(object)` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | Região na AWS, exemplo "us-east-1" | `string` | `" "` | no |
-| <a name="input_tag_igw"></a> [tag\_igw](#input\_tag\_igw) | Tag Name do internet gateway | `string` | `""` | no |
-| <a name="input_tag_rtable"></a> [tag\_rtable](#input\_tag\_rtable) | Tag Name das route tables | `string` | `""` | no |
 | <a name="input_tag_vpc"></a> [tag\_vpc](#input\_tag\_vpc) | Tag Name da VPC | `string` | `""` | no |
 
 ## Outputs
