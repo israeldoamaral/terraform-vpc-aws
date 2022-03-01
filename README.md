@@ -66,17 +66,17 @@ variable "tag_vpc" {
   default     = "VPC-name"
 }
 
-variable "tag_igw" {
+<!-- variable "tag_igw" {
   description = "Tag Name do internet gateway"
   type        = string
   default     = "gw-name"
-}
+} -->
 
-variable "tag_rtable" {
+<!-- variable "tag_rtable" {
   description = "Tag Name das route tables"
   type        = string
   default     = "rt-name"
-}
+} -->
 
 variable "nacl" {
   description = "Regras de Network Acls AWS"

@@ -8,7 +8,8 @@ resource "aws_route_table" "public" {
   }
 
   tags = {
-    Name = "Public-${var.tag_rtable}"
+    # Name = "Public-${var.tag_rtable}"
+    Name = format("%s-Public_rt", var.tag_vpc)
   }
 }
 
@@ -16,7 +17,8 @@ resource "aws_route_table" "private" {
   vpc_id = var.vpc
 
   tags = {
-    Name = "Private-${var.tag_rtable}"
+    # Name = "Private-${var.tag_rtable}"
+    Name = format("%s-Private_rt", var.tag_vpc)
   }
 }
 

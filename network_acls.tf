@@ -29,7 +29,8 @@ resource "aws_network_acl" "public" {
   }
 
   tags = {
-    Name = "ACL-Public"
+    # Name = "ACL-Public"
+    Name = format("%s-Acl-Public", tag_vpc)
   }
 }
 
@@ -64,6 +65,7 @@ resource "aws_network_acl" "private" {
   }
 
   tags = {
-    Name = "ACL-Private"
+    # Name = "ACL-Private"
+    Name = format("%s-Acl-Private", var.tag_vpc)
   }
 }

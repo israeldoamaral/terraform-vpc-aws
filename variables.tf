@@ -27,16 +27,16 @@ variable "tag_vpc" {
 }
 
 
-variable "tag_igw" {
-  description = "Tag Name do internet gateway"
-  type        = string
-}
+# variable "tag_igw" {
+#   description = "Tag Name do internet gateway"
+#   type        = string
+# }
 
 
-variable "tag_rtable" {
-  description = "Tag Name das route tables"
-  type        = string
-}
+# variable "tag_rtable" {
+#   description = "Tag Name das route tables"
+#   type        = string
+# }
 
 
 variable "nacl" { 
