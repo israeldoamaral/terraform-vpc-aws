@@ -27,7 +27,7 @@ provider "aws" {
 
 
 module "network" {
-  source          = "git::https://github.com/marcio-machado76/terraform_aws_vpc"
+  source          = "git::https://github.com/israeldoamaral/terraform-vpc-aws"
   region          = var.region
   cidr            = var.cidr
   count_available = var.count_available
