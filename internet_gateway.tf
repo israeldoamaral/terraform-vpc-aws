@@ -4,6 +4,6 @@ resource "aws_internet_gateway" "igw" {
 
   tags = {
     # Name = var.tag_igw
-    Name = format("%s-igw", var.tag_vpc)
+    Name = format("IGW-%s", var.tag_vpc)
   }
 }
